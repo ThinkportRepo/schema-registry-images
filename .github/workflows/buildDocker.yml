@@ -39,9 +39,10 @@ jobs:
         with:
           context: ${{ matrix.base }}
           file: ${{ matrix.base }}/Dockerfile.ubi8
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: thinkportgmbh/${{ matrix.base }}:ubi8-latest
           build-args: |
+            DOCKER_UPSTREAM_TAG=7.0.1
             CONFLUENT_VERSION=7.0.1
             CONFLUENT_PACKAGES_REPO=https://packages.confluent.io/rpm/7.0

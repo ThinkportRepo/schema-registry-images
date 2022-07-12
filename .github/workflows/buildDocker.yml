@@ -43,5 +43,5 @@ jobs:
           push: true
           tags: thinkportgmbh/${{ matrix.base }}:ubi8-latest
           build-args: |
-            CONFLUENT_VERSION=7.0.0
+            CONFLUENT_VERSION=7.0.1
             CONFLUENT_PACKAGES_REPO=https://packages.confluent.io/rpm/7.0

@@ -41,6 +41,13 @@
         <io.confluent.schema-registry-images.version>7.0.1</io.confluent.schema-registry-images.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
